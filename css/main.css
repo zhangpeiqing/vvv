@@ -1,0 +1,418 @@
+.bg {
+    position: relative;
+}
+.bg img {
+    width: 1920px;
+    height: 1080px;
+    display: block;
+    position: fixed;
+    _position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -960px;
+    margin-top: -540px;
+    z-index: -1!important;
+    opacity: 0.9!important;
+    vertical-align: middle;
+}
+.homePage {
+	position: relative;
+	top: -40px;
+}
+.homePage h1 {
+	text-indent: -9999px;
+	width: 342px;
+	height: 37px;
+	background: url(../images/19ks.png) no-repeat center;
+	position: absolute;
+	top: 210px;
+	left: 160px;
+}
+.homePage .cpm {
+	width: 331px;
+	height: 114px;
+	background: url(../images/cpm.png) no-repeat center;
+	position: absolute;
+	top: 263px;
+	left: 160px;
+}
+.glass {
+	position: absolute;
+	width: 76px;
+	height: 75px;
+	background: url(../images/glass.png) no-repeat center;
+    left: -45px;
+    top: 70px;
+    animation: oo 1s infinite alternate both;
+    /*animation-iteration-count: infinite;
+    animation-duration: 1.1s;
+    animation-direction: alternate;*/
+}
+@-webkit-keyframes oo {
+	from { transform: scale(1); }
+	to { transform: scale(1.4); }
+}
+@-o-keyframes oo {
+	from { transform: scale(1); }
+	to { transform: scale(1.4); }
+}
+@-moz-keyframes oo {
+	from { transform: scale(1); }
+	to { transform: scale(1.4); }
+}
+@keyframes oo {
+	from { transform: scale(1); }
+	to { transform: scale(1.4); }
+}
+.homePage .kfc {
+	width: 340px;
+	height: 114px;
+	background: url(../images/kfc.png) no-repeat center;
+	position: absolute;
+	top: 395px;
+	left: 160px;
+}
+.homePage .ct {
+	width: 318px;
+	height: 414px;
+	background: url(../images/ct.png) no-repeat center;
+	position: absolute;
+	top: 186px;
+	right: 151px;
+}
+.ChaXun {
+	width: 760px;
+	/*height: 200px;*/
+	background: #faf8fb;
+	border-radius: 10px;
+	border: 3px solid #c12cfd;
+	box-shadow: 0px 3px 40px rgba(193,44,253,1);
+	position: absolute;
+	left: 50%;
+	margin-left: -380px;
+	top: 530px;
+}
+.bor {
+	border-radius: 10px;
+	border: 3px solid #e5e5e5;
+	/*height: 194px;*/
+}
+.JobCode {
+	height: 50px;
+	padding-left: 115px;
+	margin-top: 38px;
+}
+.JobCode span{
+	display: block;
+	float: left;
+	width: 85px;
+	height: 50px;
+	text-align: left;
+	font:700 16px/50px "microsoft yahei";
+	color:#333;
+}
+.JobCode input{
+	outline: none;
+	border:none;
+	background: none;
+	display: block;
+	float: left;
+	width: 333px;
+	height: 48px;
+	border:1px solid #333;
+	border-radius: 25px;
+	font:400 16px/50px "microsoft yahei";
+	color:#333;
+	padding-left: 15px;
+}
+.ChaXun .tj {
+	outline: none;
+	border:none;
+	background: none;
+	display: block;
+	width: 350px;
+	height: 50px;
+	background: url(../images/tjbg.png) no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	font:700 20px/48px "microsoft yahei";
+	color:#fff;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 25px;
+	/*border:1px solid #a130fc;*/
+	letter-spacing: 3px;
+	margin: 20px  auto 0;
+	opacity: 0.7
+}
+.ChaXun .tj:hover {
+	/*transform: scale(0.97);*/
+	background: url(../images/tjbgt.png) no-repeat center;
+	opacity: 1;
+	/*color:#a130fc;*/
+}
+.alink {
+	width: 760px;
+	height: 50px;
+	position: absolute;
+	left: 50%;
+	margin-left: -380px;
+	top: 780px;
+}
+.alink a {
+	display: block;
+	float: left;
+	width: 180px!important;
+	height: 48px!important;
+	border:1px solid #fff;
+	text-align: center;
+	font:400 20px/50px "microsoft yahei";
+	color:#f725ff;
+	margin-left: 4px;
+	margin-right: 4px;
+	border-radius: 25px;
+	background: #fff;
+	transition: 0.3s
+}
+.alink a:hover {
+/*	border:1px solid #f725ff;
+	transform: scale(0.98);*/
+}
+#data {
+	width: 760px;
+    height: 45px;
+    position: absolute;
+    left: 50%;
+    margin-left: -380px;
+    top: 0;
+    z-index: 9999;
+    text-align: center;
+    font: 400 18px/45px "microsoft yahei";
+    color: #593af9;
+    letter-spacing: 2px;
+    background: #fff;
+    border-radius: 10px;
+}
+#data .closes {
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: url(../images/close.png) no-repeat center;
+	right: 10px;
+	top: 8px;
+	cursor: pointer;
+}
+.table_wrap {
+	width: 760px;
+	height: 750px;
+	border-radius: 10px;
+	background: #fff;
+	position: fixed;
+	top: 10%;
+	left: 50%;
+	margin-left: -380px;
+	z-index: 9999
+}
+.table_scroll {
+	width: 90%;
+	height: 665px;
+	overflow-y: auto;
+	margin: 45px auto 0;
+}
+.table_wrap table {
+	
+}
+.dataSystem {
+	text-align: center;
+    font: 700 22px/45px "microsoft yahei";
+    color: #000;
+    font-style: italic;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cover {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+     background: rgba(0, 0, 0, 0.6); 
+    z-index: 9998;
+}
+/*table 表格样式start*/
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0 auto;
+	text-align: center;
+
+}
+.table tr {
+	background: #fff;
+	transition: 0.3s
+}
+.table tr:nth-child(n){
+	background: #f4f4f4;
+}
+.table tr:nth-child(2n){
+	background: #fff;
+}
+.table tr td{
+	font:400 16px "microsoft yahei";
+	color:#000;
+	border:none;
+	padding: 5px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.table tr:hover {
+	background: rgba(198,47,254,0.8);
+}
+.table tr:hover td {
+	color:#fff;
+}
+.table tr td p {
+	text-align: left;
+	padding-left: 5px;
+	line-height: 24px;
+}
+.table tr td a {
+	display: block;
+	width: 130px;
+	height: 35px;
+	border:1px solid #fc417b;
+	font:400 18px/35px "microsoft yahei";
+	color:#fff;
+	text-align: center;
+	border-radius: 18px;
+	margin: 0 auto;
+	background: #fc417b;
+	transition: 0.3s
+}
+.table tr td a:hover {
+	color:#fff;
+	background: transparent;
+}
+.table tr {
+	/*border-bottom:1px solid #000;*/
+}
+.table tr th{
+	height: 50px;
+	background: #593af9;
+	font:400 20px/50px "microsoft yahei";
+	color:#fff;
+}
+/*table 表格样式end*/
+/*fixed_r*/
+.fixed_r {
+	position: fixed;
+	width: 151px;
+	height: 533px;
+	background: url(../images/fixed_r.png) no-repeat;
+	right: 0;
+	top: 20%;
+	z-index: 9999;
+	text-align: center;
+	display: none;
+}
+.toplink {
+	height: 16px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 72px;
+	margin-bottom: 17px;
+}
+.toplink a {
+	flex: 1;
+	font:400 14px/16px "microsoft yahei";
+	color:#fff;
+	text-align: center;
+	transition: 0.3s
+}
+.toplink a:hover {
+	color:#f6ff00;
+	font-weight: bold;
+}
+.fixrul {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.fixrul a{
+	display: block;
+	height: 27px;
+	cursor: pointer;
+	transition: 0.3s
+}
+.fixrul a:hover {
+	background: #fc417b;
+}
+.fixrul a:hover span {
+	color:#fff;
+}
+.fixrul a:hover p {
+	color:#fff;
+}
+.fixrul a span{
+	display: block;
+	float: left;
+	width: 58px;
+	height: 100%;
+	font:700 12px/27px "microsoft yahei";
+	color:#333;
+	text-align: center;
+	/*margin-left: 4px;*/
+	margin-right: 2px;
+	transition: 0.3s
+}
+.fixrul a p{
+	display: block;
+	float: left;
+	height: 100%;
+	font:400 12px/27px "microsoft yahei";
+	color:#333;
+	text-align: center;
+	transition: 0.3s
+}
+
+.fixed_r .close {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+.fixedtop {
+    position: absolute;
+    width: 40px;
+    height: 26px;
+    bottom: 19px;
+    left: 50%;
+    margin-left: -20px;
+    cursor: pointer;
+}
+.online {
+	position: fixed;
+	width: 48px;
+	height: 206px;
+	/*right: -48px;*/
+	right: 0px;
+	top: 30%;
+	background: url(../images/online.png) no-repeat;
+	z-index: 99;
+	cursor: pointer;
+	/*display: none;*/
+}
+
+.zhu {
+	text-align: center;
+	font:400 16px/40px "microsoft yahei";
+	color:#999;
+	margin: 6px 0;
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="Keywords" content="">
+	<title></title>
+	<!-- pc端地域标签 -->
+	<meta name="location" content="province=北京;city=北京">
+	<meta name="mobile-agent" content="format=html5; url=">
+	<meta name="applicable-device" content="pc">
+	<meta http-equiv="Cache-Control" content="no-transform" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<link rel="alternate" media="only screen and(max-width: 640px)" href="">
+	<!-- pc端地域标签 -->
+	<link rel="stylesheet" href="./css/animate.css">
+	<link rel="stylesheet" href="./css/public.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/login.css">
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/js.cookie.min.js"></script>
+	<script src="./js/dataList.js"></script>
+	<script src="./js/wow.min.js"></script>
+	<script src="./js/index.js"></script>
+	
+	<!-- pc端的适配 -->
+	<script type="text/javascript">
+	 function browserRedirect() {
+		var sUserAgent = navigator.userAgent.toLowerCase();  
+		var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";  
+		var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";  
+		var bIsMidp = sUserAgent.match(/midp/i) == "midp";  
+		var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";  
+		var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";  
+		var bIsAndroid = sUserAgent.match(/android/i) == "android";  
+		var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";  
+		var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";  
+		if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+			// window.location.href = 'http://m.bj.offcn.com/zg/19xdgkc_m/';
+		}
+	}
+	browserRedirect();
+	</script>
+	<!-- 分校百度统计代码 -->
+<!-- <script type="text/javascript" src="http://www.offcn.com/statics/js/bdtop.js"></script> -->
+</head>
+<body style="overflow-x:hidden">
+
+<!-- header -->
+<div class="zgHead fixed">
+	<div class="w clearfix">
+		<div class="zghl clearfix">
+			<a class="im1" href="http://bj.offcn.com/" target="_blank"><img  src="./images/zgoffcn.png" alt="" class="zgoffcn"></a>
+			<dl>
+				<a href="http://bj.offcn.com/" target="_blank">中公首页</a>
+				<a href="https://www.51gouke.com/bjjm/" target="_blank" rel="nofollow">面授课程</a>
+				<a href="http://www.letushu.com/" target="_blank" rel="nofollow">图书商城</a>
+				<a href="http://beijing.eoffcn.com/" target="_blank" rel="nofollow">网校课程</a>
+				<a href="http://19.offcn.com/" target="_blank" rel="nofollow">直播</a>
+			</dl>
+		</div>
+		<div class="zghr clearfix">
+			<a onClick="NTKF.im_openInPageChat('kf_10353_1536732545828')"><img src="./images/salph.png" alt="">咨询电话：010-51657188</a>
+		</div>
+	</div>
+</div>
+
+<div class="homePage w">
+	<h1 class="wow bounceInDown">北京公务员考试查排名看分差</h1>
+	<div class="cpm wow bounceInDown"><div class="glass"></div></div>
+	<div class="kfc wow bounceInDown" data-wow-delay="0.5s"></div>
+	<div class="ct wow bounceInRight" data-wow-delay="0.5s"></div>
+	<div class="ChaXun wow fadeInLeft" data-wow-delay="1s">
+		<div class="bor">
+			<div class="JobCode">
+				<span>职位代码</span><input type="text" placeholder="请填写正确的职位代码否则无法查询" autofocus class="zwdm">
+			</div>
+		<input type="button" value="查询排名" class="tj">
+		<p class="zhu">注：本系统仅对入面考生开放，未入面无法查询</p>
+		</div>
+	</div>
+	<div class="alink wow fadeInRight" data-wow-delay="1s">
+		<a class="animBtn themeA" href="http://www.baidu.com" target="_blank" rel="nofollow">职位代码查询</a>
+		<a class="animBtn themeB" href="javascript:;" target="_blank" rel="nofollow">面试名单查询</a>
+		<a class="animBtn themeC" href="javascript:;" target="_blank" rel="nofollow">面试分数线查询</a>
+		<a class="animBtn themeD" href="javascript:;" target="_blank" rel="nofollow">面试考情查询</a>
+	</div>
+</div>
+
+
+<div class="table_wrap" style="display: none;">
+	<div id="data" style="">系统为您匹配到<span class="dataSystem">10</span>条数据<s class="closes"></s></div>
+	<div class="table_scroll">
+		
+	</div>
+</div>
+<div class="cover" style="display: none;"></div>
+<div class="bg">
+    <img src="./images/homePagebg.jpg" alt="">
+</div>
+
+<!-- 登录框 START-->
+<section id="loginAndReg" style="display: none;">
+	<span class="bd_close"></span>
+	<div class="nav" id="nav">
+		<span class="current" id="login_nav">登录</span>
+		<span id="reg_nav">注册</span>
+	</div>
+	<div class="content1" id="content">
+		<div id="login_con" class="current" style="display: block;">
+			<form action="">
+				<input type="text" name="Userame" id="loginName" placeholder="用户名" >
+				<input type="text" name="Phone" id="loginPhone" placeholder="手机号码" >
+				<input type="button" value="登 录" id="denglu" class="submintBtn">
+	        	<input type="hidden" value="259" id="dlformid">
+			</form>
+		</div>
+		<div id="reg_con" style="display: none;">
+			<form action="">
+				<input type="text" name="Name" id="username" placeholder="用户名" required >
+				<input type="text" name="Phone" id="phone" placeholder="手机号码" >
+				<div class="yzm_wrap">
+					<input type="text" name="yzm"  id="yzm" placeholder="验证码" >
+		            <a href="javascript:;" id="getyzm" class="yzm_btn" data="259"  microsoft="">获取</a>
+		            <div id="daojishi" style="display: none;">120s以后重新获取</div>
+	            </div>
+	            <input type="text" name="Zkz" id="zkz" placeholder="准考证号">
+	            <input type="button" value="免费注册" id="zhuce" class="submintBtn">
+	        	<input type="hidden" value="259" id="zcformid">
+			</form>
+		</div>
+	</div>
+</section>
+<!-- 登录框 END-->
+<script type="text/javascript" src="./js/login.js"></script>
+
+<!-- fixed_r -->
+<div class="fixed_r">
+	<div class="toplink">
+		<a class="a1" onClick="NTKF.im_openInPageChat('kf_10353_1536732545828')">课程咨询</a>
+		<a class="a2" onClick="NTKF.im_openInPageChat('kf_10353_1536732545828')">活动咨询</a>
+	</div>
+	<ul class="fixrul">
+		<a onClick="NTKF.im_openInPageChat('kf_10353_1536732545828')">
+			<span>金码分部</span>
+			<p>010-51657188</p>
+		</a>
+		<a onClick="NTKF.im_openInPageChat('kf_10353_1537345700747')">
+			<span>数码分部</span>
+			<p>010-51650199</p>
+		</a>
+		<a onClick="NTKF.im_openInPageChat('kf_10353_1537342266921')">
+			<span>国贸分部</span>
+			<p>010-51661493</p>
+		</a>
+		<a onClick="NTKF.im_openInPageChat('kf_10353_1537342359586')">
+			<span>西站分部</span>
+			<p>010-51668694</p>
+		</a>
+		<a onClick="NTKF.im_openInPageChat('kf_10353_1537342296205')">
+			<span>航 天 桥</span>
+			<p>010-51291054</p>
+		</a>
+		<a onClick="NTKF.im_openInPageChat('kf_10353_1537434899494')">
+			<span>交大分部</span>
+			<p>010-51661442</p>
+		</a>
+		<a onClick="NTKF.im_openInPageChat('kf_10353_1537436243538')">
+			<span>朝阳分部</span>
+			<p>010-51659743</p>
+		</a>
+		<a onClick="NTKF.im_openInPageChat('kf_10353_1537342153148')">
+			<span>昌平分部</span>
+			<p>010-51657153</p>
+		</a>
+		<a onClick="NTKF.im_openInPageChat('kf_10353_1537342205768')">
+			<span>通州分部</span>
+			<p>010-51669714</p>
+		</a>
+		<a onClick="NTKF.im_openInPageChat('kf_10353_1537342391185')">
+			<span>惠新东街</span>
+			<p>010-51650351</p>
+		</a>
+		<a onClick="NTKF.im_openInPageChat('kf_10353_1537342342729')">
+			<span>大兴分部</span>
+			<p>010-51653156</p>
+		</a>
+		<a onClick="NTKF.im_openInPageChat('kf_10353_1537342410768')">
+			<span>燕郊分部</span>
+			<p>010-61595912</p>
+		</a>
+		<a onClick="NTKF.im_openInPageChat('kf_10353_1537342342729')">
+			<span>房山分部</span>
+			<p>010-59244055</p>
+		</a>
+		<a onClick="NTKF.im_openInPageChat('kf_10353_1536732545828')">
+			<span>华电北农</span>
+			<p>17600006603</p>
+		</a>
+	</ul>
+	<div class="fixedtop"></div>
+	<div class="close"></div>
+</div>
+<div class="online"></div>
+
+<script>
+	$('.close').click(function () {
+        $(this).parent().slideUp(300, function () {
+            $('.online').slideDown();
+        });
+    });
+    $('.online').click(function () {
+        $('.online').slideUp(300, function () {
+            $('.fixed_r').slideDown();
+        });
+
+    });
+</script>
+
+<script>
+var _hmt = _hmt || [];
+
+(function() {
+
+  var hm = document.createElement("script");
+
+  hm.src = "https://hm.baidu.com/hm.js?4d997e72f9176f2cfe0746b710c46d55";
+
+  var s = document.getElementsByTagName("script")[0]; 
+
+  s.parentNode.insertBefore(hm, s);
+
+})();
+</script>
+<!-- 【策划:】【设计:卢延庆】【制作:张培青】2019.   -->
+<script type="text/javascript" src="./js/seach.js"></script>
+<script type="text/javascript" src="http://www.offcn.com/statics/js/bdtj_bj.js"></script>
+<script type="text/javascript" src=" http://www.offcn.com/statics/js/bdbot.js"></script>
+<script type="text/JavaScript" src="http://bj.offcn.com/statics/js/zgjs/xiaoneng.js"></script>
+</body>
+</html>
